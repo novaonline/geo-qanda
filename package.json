@@ -1,0 +1,19 @@
+{
+  "name": "geo-qanda",
+  "version": "1.0.0",
+  "description": "Q and A based on geo location",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaonline/geo-qanda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novaonline/geo-qanda/issues"
+  },
+  "homepage": "https://github.com/novaonline/geo-qanda#readme"
+}
