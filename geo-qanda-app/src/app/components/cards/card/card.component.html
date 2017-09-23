@@ -1,4 +1,4 @@
-<div [ngClass]="{'question': isQuestion, 'sticky': isQuestion, 'card': true }">
+<div [ngClass]="{'question': isQuestion, 'sticky': isQuestion, 'card': true, 'compact': isCompact, 'ontop': isCompact }">
   <div [ngClass]="{'content': true, 'highlight': isQuestion}">
     <h2>{{qOrA.mainText}}</h2>
     <div class="context">

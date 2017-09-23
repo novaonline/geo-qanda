@@ -15,7 +15,7 @@ import { ProperCasePipe } from './pipes/proper-case.pipe';
     NavigationComponent,
     OwnersActionFormatterPipe,
     ResponseActionFormatterPipe,
-    ProperCasePipe
+    ProperCasePipe,
   ],
   imports: [
     BrowserModule
