@@ -1,0 +1,23 @@
+<div [ngClass]="{'question': isQuestion, 'sticky': isQuestion, 'card': true }">
+  <div [ngClass]="{'content': true, 'highlight': isQuestion}">
+    <h2>{{qOrA.mainText}}</h2>
+    <div class="context">
+      <div class="avatar" [ngStyle]="{'background-image': 'url('+qOrA.ownerAvatarUrl+')'}">
+      </div>
+      <div class="text">
+        <div class="verb-title">
+          <span class="name">{{qOrA.ownerName}}</span>
+          <span class="verb">{{isQuestion | ownersActionFormatter }}</span>
+        </div>
+        <div class="location">at <b>{{qOrA.location}}</b></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="text">{{isQuestion | responseActionFormatter | properCase }}</span>
+    <span class="icons">
+      <i class="fa fa-heart" aria-hidden="true" ></i>
+      <i class="fa fa-comment" aria-hidden="true"></i>
+    </span>
+  </div>
+</div>

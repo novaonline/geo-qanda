@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+ * UI inspired by https://uimovement.com/ui/2730/card-interaction/
+*/
+
+@import "./sass/variables";
+@import "./sass/mixins";
+@import "./../node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: $color-3;
+  @include background-image(linear-gradient(top, $color-3 0%, $color-3 25%, $color-1 25%, $color-1 100%));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: 'Work Sans', sans-serif;
+}

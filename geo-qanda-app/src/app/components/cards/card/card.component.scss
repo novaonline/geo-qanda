@@ -1,0 +1,137 @@
+/*
+ * UI inspired by https://uimovement.com/ui/2730/card-interaction/
+*/
+@import '../../../../sass/variables';
+
+.card {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  &.question {
+    position: sticky;
+    top: 70px;
+    z-index: 49;
+    &.compact {
+      & .context {
+        & .avatar {
+          display: none;
+        }
+        & .text {
+          min-height: 0;
+          margin-left: 0;
+          padding-top: 0;
+          & .verb-title {
+            display: inline-block;
+          }
+          & .location {
+            display: inline-block;
+          }
+        }
+      }
+      & .footer {
+        background-color: $color-4;
+        border-top: none;
+        padding-top: 0;
+        & .icons {
+          display: none;
+        }
+      }
+      &.ontop .footer {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+  & .content {
+    &.highlight {
+      background-color: $color-4;
+      & h2 {
+        color: $color-2;
+        text-shadow: 1px 1px 5px rgba(150, 150, 150, 1);
+        font-size: $h2-font-size;
+      }
+      & .context .avatar {
+        border-color: white;
+      }
+      & .text {
+        color: $color-2;
+      }
+    }
+    background-color: $color-2;
+    border-top-right-radius: $card-border-radius-size;
+    border-top-left-radius: $card-border-radius-size;
+    padding: 25px;
+    & .context {
+      & .avatar {
+        float: left;
+        height: $avatar-size;
+        width: $avatar-size;
+        border-radius: $avatar-size;
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: 2px solid rgba(125, 125, 125, 0.7);
+      }
+      & .text {
+        min-height: $avatar-size;
+        margin-left: $avatar-size + 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        & .location {
+          font-size: 1em;
+          opacity: 0.55;
+        }
+      }
+    }
+  }
+  & .footer {
+    padding: 10px 25px;
+    background-color: $color-2;
+    border-bottom-left-radius: $card-border-radius-size;
+    border-bottom-right-radius: $card-border-radius-size;
+    line-height: 40px;
+    border-top: 1px solid rgba(200, 200, 200, 0.5);
+    position: relative;
+    & .text {
+      color: $color-5;
+    }
+    & .icons {
+      right: 0;
+      position: absolute;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #aaa;
+      opacity: 0.8;
+      & i {
+        line-height: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+  & .footer {
+    padding: 10px 25px;
+    background-color: $color-2;
+    border-bottom-left-radius: $card-border-radius-size;
+    border-bottom-right-radius: $card-border-radius-size;
+    line-height: 40px;
+    border-top: 1px solid rgba(200, 200, 200, 0.5);
+    position: relative;
+    & .text {
+      color: $color-5;
+    }
+    & .icons {
+      right: 0;
+      position: absolute;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #aaa;
+      opacity: 0.8;
+      & i {
+        line-height: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}

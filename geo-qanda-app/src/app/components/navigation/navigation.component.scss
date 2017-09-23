@@ -1,0 +1,15 @@
+@import "./../../../sass/variables";
+nav {
+  padding: 0px 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $color-3;
+  z-index: 48;
+  & h1 {
+    text-align: center;
+    color: $color-2;
+    opacity: 0.85;
+  }
+}
